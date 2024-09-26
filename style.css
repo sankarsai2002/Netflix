@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(./images/image1.jpg);
+}
+
+.removeTemperary{
+    display: none;
+}
+
+.icon img{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    width: 10vw;
+    filter: drop-shadow(2px 2px 2px rgb(67, 43, 43));
+}
+
+/* loading section starts here */
+.loading{
+    transform: scale(2);
+    position: absolute;
+}
+
+svg {
+    width: 3.25em;
+    transform-origin: center;
+    animation: rotate4 2s linear infinite;
+}
+
+circle {
+    fill: none;
+    stroke: hsl(214, 97%, 59%);
+    stroke-width: 2;
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: dash4 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate4 {
+100% {
+    transform: rotate(360deg);
+}
+}
+
+@keyframes dash4 {
+0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+}
+
+50% {
+    stroke-dasharray: 90, 200;
+    stroke-dashoffset: -35px;
+}
+
+100% {
+    stroke-dashoffset: -125px;
+}
+}
+
+/* loading section ends here */
+.inputText {
+    width: 20vw;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #141414;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+}
+
+.inputText::placeholder {
+    color: #b3b3b3;
+}
+
+#searchBtn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #e50914;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+#searchBtn:hover {
+    transform: scale(1.03);
+}
+
+.maincontainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maincontainer .inputs{
+    display: flex;
+    padding: 80px;
+}
+.InfoContainer{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.movie-details{
+    background-color: black;
+    width: 30vw;
+    padding: 10px;
+}
+
+.movie-details #title{
+    font-size: 50px;
+    padding: 10px 10px;
+}
+
+.movie-details #desc{
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+.movie-info{
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    padding: 10px 20px;
+}
+
+.movie-info span{
+    padding: 5px;
+}
+
+.movie-details p{
+    font-size: 16px;
+    padding: 5px 20px;
+}
+
+.movie-details #director,#actors,#awards,#earnings{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.movie-background{
+    width: 20vw;
+}
+
+.movie-background img{
+    width: 100%;
+    height: 100%;
+}
+
+/* .movie-container .movie-info #year,#genre,#ratings{
+    
+} */
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+    .movie-container {
+        width: 90%;
+        max-width: none;
+    }
+
+    .movie-details h1 {
+        font-size: 2rem;
+    }
+
+    .movie-details {
+        padding: 15px 20px;
+    }
+
+    .movie-info {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-container {
+        width: 100%;
+        max-width: none;
+    }
+
+    .movie-details h1 {
+        font-size: 1.5rem;
+    }
+
+    .movie-info {
+        font-size: 0.9rem;
+    }
+} */

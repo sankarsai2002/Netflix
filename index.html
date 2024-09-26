@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details - Netflix Style</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/SmallIcon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="icon">
+        <img src="./images/NetflixICON.png" alt="NETFLIX">
+    </div>
+    <div class="maincontainer">
+        <div class="inputs">
+            <input type="text" name="inputText" id="inputText" class="inputText" placeholder="Enter to Search">
+            <button id="searchBtn" onclick="search()">Search</button>
+        </div>
+    
+    
+        <!-- <div id="container" class="movie-container"> -->
+        <div class="InfoContainer" id="container">
+            <div class="loading removeTemperary" id="loading">
+                <svg viewBox="25 25 50 50">
+                <circle r="20" cy="50" cx="50"></circle>
+                </svg>
+            </div>
+            <div class="movie-details removeTemperary" id="movie-details">
+                <h1 id="title">Movie Title</h1>
+                <p id="desc">A child from the Mahishmati kingdom is raised by tribal people...</p>
+                <div class="movie-info">
+                    <span id="year">• 2015</span> 
+                    <span id="genre">• Action, Drama</span>
+                    <span id="ratings">• 8.0/10</span>
+                </div>
+                <p><strong>Director:</strong> <span id="director">S.S. Rajamouli</span></p>
+                <p><strong>Starring:</strong> <span id="actors">Prabhas, Rana Daggubati, Anushka Shetty</span></p>
+                <p><strong>Awards:</strong> <span id="awards">55 wins & 22 nominations</span></p>
+                <p><strong>Box Office:</strong> <span id="earnings">$6,738,000</span></p>
+            </div>
+            <div class="movie-background removeTemperary" id="movie-background">
+                <img id="img" src="" alt="Movie Poster">
+            </div>
+        </div>    
+
+    <!-- </div> -->
+
+    <script src="./app.js"></script>
+</body>
+</html>
